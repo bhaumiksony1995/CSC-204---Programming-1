@@ -1,0 +1,44 @@
+Script started on Tue 30 Jun 2015 01:55:20 PM EDT
+]0;sony_bp@cobra:~/CSC204/Projects/Prog1[?1034h[sony_bp@cobra Prog1]$ cat -n Myfirst.java
+     1	import java.util.*;
+     2	
+     3	public class Myfirst
+     4	{
+     5		public static void main (String [] args)
+     6			{
+     7				//Variable used in this program
+     8				String personName;
+     9	
+    10				personName = getName(); // calling value-returning method getName
+    11				printOut (personName); // calling void method printOut
+    12			}
+    13	
+    14	private static String getName()
+    15		{
+    16			// this method will get the name of he user and return it to the main function
+    17			
+    18			Scanner stdin = new Scanner (System.in);
+    19			System.out.print("Please enter your first name : ");
+    20			String userInput = stdin.next();
+    21	
+    22			return userInput;
+    23		}
+    24	
+    25	private static void printOut(String personName)
+    26		{
+    27			// This method wil print a congratulatory message to a person with the name personName
+    28			
+    29			System.out.println("\nCongratulations " + personName + " on running your first Java program!!!\n\n");
+    30		}
+    31	}
+]0;sony_bp@cobra:~/CSC204/Projects/Prog1[sony_bp@cobra Prog1]$ javac Myfirst.java
+]0;sony_bp@cobra:~/CSC204/Projects/Prog1[sony_bp@cobra Prog1]$ java Myfirst
+Please enter your first name : Bhaumik
+
+Congratulations Bhaumik on running your first Java program!!!
+
+
+]0;sony_bp@cobra:~/CSC204/Projects/Prog1[sony_bp@cobra Prog1]$ exi[K[K[Kexit
+exit
+
+Script done on Tue 30 Jun 2015 01:55:47 PM EDT

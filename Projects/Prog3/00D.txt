@@ -1,0 +1,25 @@
+Problem Defenitoin: The problem to solve in the project is to create a program
+that will allow the user to input any date they wish into the program and the
+program will then calculate the specific day of the week of the particluar
+date that was input. The code for this program would have to ask the user to
+input the date from the keyboard and split the string into its different
+sections then calculate the date.
+
+Specification: The input would be one string representing a date in the format 
+month day, year from the keyboard. The output is one string output to the 
+screen representing he input day with the actual day of the week converted in 
+the format dayOfweek, month day, year.
+
+Algorithm: First step is to declare the input date and prompt the user to
+input the date they want from the keyboard. Next you would make the string all
+lower case using .toLowerCase, and truncate off the first letter. Make the
+first letter upper case by using .toUpperCase and glue it back to the string.
+Next you have to seperate the string into month, day, and year. Then take day
+and year and convert both strings to type int using Integer.parseInt(). Now
+you have to use Zellers congruence to calculate the day of the week. Declare
+the 4 variables that you will use in the formula then declare the formula.
+After that create an if statement that assigns a number to each month (January
+= 13, February = 14). And for Jan and Feb you have to subtract one from K so
+it correctly calculate for years like 1800, 1900, and 2000. Once all that is
+done you can create one System.out.println line to show the converted date to
+the screen.

@@ -1,0 +1,18 @@
+Bhaumik Sony
+7/28/2015
+Programming 201
+
+Final Project Breakdown
+
+Problem- The program welcomes the user, then asks if the user would like to either encrypt or decrypt their password. The user then selects what they wouldlike to do and the program continues and asks the user to input the password they would like to encrypt/decrypt. The program gets the password using
+password, then uses the Caesar cypher to encrypt/decrypt the password for the user. The program then creates a file called out.enc which has the encrypted script in it. 
+
+Specification- input=one string/char	 output=one string/char (either encrypted or decrypted)
+
+Algorithm
+Ask the user if they would like to encrypt or decrypt using a cout line
+Have the program call on the function getinfo to grab the password information from the user
+Have the program call on the encrypt/decrypt function that contains the algorithm for the Caesar cypher to encrypt/decrypt the input
+The program then outputs the encrypted/decrypted password into and output file
+The program calls on the function ReturnPrompt to ask the user if they would like to encrypt/decrypt another password
+
